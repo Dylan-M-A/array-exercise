@@ -11,6 +11,7 @@ namespace arrayexercises
     {
         public void Run()
         {
+            //all the function that will be used
             int[] ints = GetValues();
 
             PrintArray(ints);
@@ -38,7 +39,7 @@ namespace arrayexercises
             Console.Clear();
             return parametersArray;
         }
-
+        //creating the way the numbers will be printed out
         int[] PrintArray(int[] array)
         {
             foreach (var item in array)
@@ -49,7 +50,7 @@ namespace arrayexercises
             Console.WriteLine(array);
             return array;
         }
-
+        //showing the sum of all the numbers together
         int PrintSum(int[] array)
         {
             int sum = array.Sum();
@@ -59,7 +60,7 @@ namespace arrayexercises
             Console.WriteLine(sum);
             return sum;
         }
-
+        //printing the highest used number
         int PrintHighest(int[] array)
         {
             int i;
@@ -76,7 +77,7 @@ namespace arrayexercises
             Console.WriteLine(highestNum);
             return highestNum;
         }
-        
+        //printing out the lowest used number
         int PrintLowest(int[] array)
         {
             int i;
@@ -93,7 +94,7 @@ namespace arrayexercises
             Console.WriteLine(lowestNum);
             return lowestNum;
         }
-
+        //printing out the order of the numbers in reverse
         int[] PrintReverse(int[] array)
         {
             Console.WriteLine("Before");
